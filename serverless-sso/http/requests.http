@@ -1,0 +1,39 @@
+POST http://localhost:3000/admin/worker-list
+Content-Type: application/json
+
+{
+  "helperToken": "{{token}}"
+}
+
+###
+
+POST http://localhost:3000/admin/auditlogs-list
+Content-Type: application/json
+
+{
+  "helperToken": "{{token}}"
+}
+
+###
+
+POST http://localhost:3000/admin/worker-add
+Content-Type: application/json
+
+{
+  "helperToken": "{{token}}",
+  "name": "test",
+  "phoneNumber": "+491234567890"
+}
+
+###
+
+POST http://localhost:3000/admin/worker-del
+Content-Type: application/json
+
+{
+  "helperToken": "{{token}}",
+  "phoneNumber": "+491234567890"
+}
+
+###
+

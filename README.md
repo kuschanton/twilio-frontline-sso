@@ -88,3 +88,7 @@ Both hosted on Twilio Serverless Functions
 7. `npm run deploy` to deploy Front-end, in the output of the command you will see the URLs of the deployed assets.
 8. We are done! Go to https://xxxxxx.twil.io/index.html (see step 7) - You should see a welcome page of the Admin UI. Enter the helper token that you have configured in the Funcitons .env file and create your first agent.
 9. Login to Frontline using the phone number of the agent.
+
+## Credits
+
+This project is a Frontline adaptation of the [Flex SSO Plugin](https://github.com/bruno222/twilio-flex-plugin-sso/tree/main/serverless-sso) made by Bruno Kilian.

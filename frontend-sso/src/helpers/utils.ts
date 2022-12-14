@@ -24,9 +24,3 @@ export class LateInit<T> {
     }
   }
 }
-
-export function lateInitOf<T>(value: T): LateInit<T> {
-  let result = new LateInit<T>()
-  result.set(value)
-  return result
-}

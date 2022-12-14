@@ -68,7 +68,7 @@ Both hosted on Twilio Serverless Functions
 8. Quick test to see if you have done it correctly until here. Open Chrome and check if you can visit your `https://xxxxxx.twil.io/sso/saml` - Change the `xxxxxx` to your environment that was displayed in your Terminal from **step 7** above. You should see an error `ERR_REDIRECT_FLOW_BAD_ARGS`. For now, this means: **Success until here!**
 
 9. Now go to [Frontline SSO configuration](https://console.twilio.com/us1/develop/frontline/manage/single-sign-on?frameUrl=%2Fconsole%2Ffrontline%2Fsso%3Fx-target-region%3Dus1) to configure the SSO you just deployed with Frontline. Configure with the values below:
-
+   - `Workspace ID`: Be creative and come up with something :)
    - `IDENTITY PROVIDER ISSUER`: `https://xxxxxx.twil.io/sso/saml`
    - `SSO URL`: `https://xxxxxx.twil.io/sso/saml`
    - `X.509 CERTIFICATE`: Put the content of `./src/assets/publickey.private.cer` there.

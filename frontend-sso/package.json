@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@twilio-labs/serverless-runtime-types": "^1.1"
+  },
+  "devDependencies": {
     "@twilio-paste/core": "^17.1.0",
     "@twilio-paste/icons": "^9.4.0",
     "@types/jest": "^27.5.2",
@@ -19,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && twilio serverless:deploy --assets-folder=build --override-existing-project"
   },
   "eslintConfig": {
     "extends": [
